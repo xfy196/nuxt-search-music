@@ -38,7 +38,7 @@ export default {
     }
   },
   computed: {
-    disabled(){
+    disabled(): Boolean{
       return this.loading || this.result.hasMore
     }
   },
