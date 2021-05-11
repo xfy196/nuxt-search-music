@@ -23,7 +23,9 @@
 
 <script lang="ts">
 import axios from "axios"
-export default {
+import Vue from "vue"
+export default Vue.extend(
+  {
   data(){
     return {
       seachVal: "",
@@ -79,7 +81,8 @@ export default {
       }
     }
   }
-};
+}
+)
 </script>
 
 <style scoped>
